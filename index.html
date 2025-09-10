@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; /* horizontal center */
+      align-items: center;     /* vertical center */
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column; /* stack items vertically */
+      align-items: center;    /* center horizontally */
+      gap: 20px; /* spacing between images */
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .btn-img {
+      width: 200px; /* size of button image */
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-img:hover {
+      transform: scale(1.05); /* hover zoom effect */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Main portfolio image -->
+    <img src="http://mrsfaustinodoyle.weebly.com/uploads/5/3/9/0/53909469/8768944_orig.jpg" 
+         alt="welcome image" width="1500px">
+
+    <!-- Clickable button image -->
+    <a href="newprotfolio.html" target="_click">
+      <img class="btn-img" 
+           src="https://imgs.search.brave.com/yWtGPnV4eVvXsdmQGA6rMVTaMFW7tWTf2LL1DGCeXEQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEyLzE1LzIxLzQ3/LzM2MF9GXzEyMTUy/MTQ3NTNfQlF2N3VP/R0JJdEc0YjlDMmd0/UVZnTVQ1M0VxMWhy/S1IuanBn" 
+           alt="Click Button">
+    </a>
+  </div>
+</body>
+</html>
+
